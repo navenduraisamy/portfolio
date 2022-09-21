@@ -6,3 +6,9 @@
 a:hover{
  text-decoration: none;
 }
+
+.active{
+    color: $anchor-active-color;
+    font-size: 1.5em;
+    text-decoration: none;
+}
