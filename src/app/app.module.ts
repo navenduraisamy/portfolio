@@ -7,13 +7,15 @@ import { AppComponent } from './app.component';
 import { NavigateComponent } from './navigate/navigate.component';
 import { AboutComponent } from './about/about.component';
 import { TimelineComponent } from './timeline/timeline.component';
+import { VibeComponent } from './vibe/vibe.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     NavigateComponent,
     AboutComponent,
-    TimelineComponent
+    TimelineComponent,
+    VibeComponent
   ],
   imports: [
     BrowserModule,
@@ -21,8 +23,9 @@ import { TimelineComponent } from './timeline/timeline.component';
     RouterModule.forRoot([
       {path:"about", component:AboutComponent},
       {path:"timeline", component:TimelineComponent},
+      {path:"vibe", component:VibeComponent},
       {path:"**", redirectTo:"/about", pathMatch:"full"}
-    ])
+    ]),
   ],
   providers: [],
   bootstrap: [AppComponent]
