@@ -1,5 +1,46 @@
-img{
+@import "../../styles.scss";
+
+
+.display-4{
+    font-size: 2.5rem;
+}
+
+.profile__img{
     border-radius: 50%;
 }
 
+.abt-content{
+    padding-bottom: 2rem;
+    color: $secondary-color;
+    font-weight: 350;
+}
 
+.abt-skills__heading{
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.badge{
+    margin: 0 .5rem 0 0;
+    background-color: $badge-background;
+}
+
+@media (max-width: $mobile-max-width) {
+    .display-4{
+        font-size: 7vmin;
+        font-weight: 400;
+    }
+
+    .img-container{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        .profile__img{
+            width: 50%;
+            margin-bottom: 2rem;
+        }
+    }
+    
+  }

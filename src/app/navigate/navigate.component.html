@@ -1,38 +1,48 @@
 <div class="">
-    <div class="container ">
+    <div class="container">
         <div class="row">
-            <div class="col-3 d-flex align-items-center">
+            <div class="d-none col-md-3 d-md-flex align-items-center">
                 <div class="d-flex flex-column">
                     <div class="my-4">
-                        <a href="" 
-                        routerLink="/about"
-                        routerLinkActive="active">
-                        About
+                        <a href="" routerLink="/about" routerLinkActive="active">
+                            About
                         </a>
                     </div>
                     <div class="my-4">
-                        <a href="" 
-                        routerLink="/timeline"
-                        routerLinkActive="active">
-                        Timeline
+                        <a href="" routerLink="/timeline" routerLinkActive="active">
+                            Timeline
                         </a>
                     </div>
                     <div class="my-4">
-                        <a href=""
-                        routerLink="/projectList"
-                        routerLinkActive="active">Projects</a>
+                        <a href="" routerLink="/projectList" routerLinkActive="active">Projects</a>
                     </div>
                     <div class="my-4">
-                        <a href=""
-                        routerLink="/vibe"
-                        routerLinkActive="active">
-                        Vibe with
+                        <a href="" routerLink="/vibe" routerLinkActive="active">
+                            Vibe with
                         </a>
-                    </div> 
+                    </div>
                 </div>
             </div>
-            <div class="col-9 d-flex align-items-center">
+            <div class="col-md-9 d-flex align-items-center py-5">
                 <router-outlet></router-outlet>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid">
+        <div class="d-md-none">
+            <div class="icon-group">
+                <a href="" class="icon-group__item" routerLink="/about" routerLinkActive="active">
+                    <i class="fa fa-user-o" aria-hidden="true"></i>
+                </a>
+                <a href="" class="icon-group__item" routerLink="/timeline" routerLinkActive="active">
+                    <i class="fa fa-info" aria-hidden="true"></i>
+                </a>
+                <a href="" class="icon-group__item" routerLink="/projectList" routerLinkActive="active">
+                    <i class="fa fa-terminal" aria-hidden="true"></i>
+                </a>
+                <a href="" class="icon-group__item" routerLink="/vibe" routerLinkActive="active">
+                    <i class="fa fa-envelope-open-o" aria-hidden="true"></i>
+                </a>
             </div>
         </div>
     </div>
